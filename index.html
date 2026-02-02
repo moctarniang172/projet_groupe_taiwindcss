@@ -1,215 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Ebuy Shop</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ebuy Shop</title>
+  </head>
 
-<body class="bg-white text-gray-800">
+  <body class="bg-white text-gray-800">
+    <!-- ================= HEADER ================= -->
+    <header class="sticky top-3 bg-white shadow z-50 w-[50%] ms-[25%]">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <img src="icone/logo.png" alt="logo" class="h-8" />
 
-<!-- ================= HEADER ================= -->
-<header class="sticky top-3 bg-white shadow z-50 w-[50%] ms-[25%]">
-  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <img src="icone/logo.png" alt="logo" class="h-8">
+        <nav class="hidden md:flex gap-6 font-medium">
+          <!-- Lien simple -->
+          <a href="index.html" class="text-orange2"> Home </a>
 
-    <nav class="hidden md:flex gap-6 font-medium">
-  <!-- Lien simple -->
-  <a href="index.html" class="text-orange2">
-    Home
-  </a>
+          <!-- ================= DROPDOWN ================= -->
+          <div class="relative group">
+            <!-- Bouton -->
+            <button class="font-medium hover:text-orange2">Shop</button>
 
-  <!-- ================= DROPDOWN ================= -->
-  <div class="relative group">
+            <!-- Menu -->
+            <ul
+              class="absolute top-full left-0 pt-4 w-48 bg-white shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300"
+            >
+              <li>
+                <a
+                  href="rama_ka/categorie.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >Catégorie</a
+                >
+              </li>
 
-  <!-- Bouton -->
-  <button class="font-medium hover:text-orange2">
-    Shop
-  </button>
+              <li>
+                <a
+                  href="rama_ka/produits.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >Produits</a
+                >
+              </li>
 
-  <!-- Menu -->
-  <ul
-    class="absolute top-full left-0 pt-4 w-48 bg-white shadow-lg
-           opacity-0 pointer-events-none
-           group-hover:opacity-100 group-hover:pointer-events-auto
-           transition duration-300">
+              <li>
+                <a
+                  href="rama_ka/panier.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >Panier</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="relative group">
+            <!-- Bouton -->
+            <button class="font-medium hover:text-orange2">Blog</button>
 
-    <li>
-      <a href="rama_ka/categorie.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">Catégorie</a>
-    </li>
+            <!-- Menu -->
+            <ul
+              class="absolute top-full left-0 pt-4 w-48 bg-white shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300"
+            >
+              <li>
+                <a
+                  href="soulayemane/blog.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >Blog</a
+                >
+              </li>
 
-    <li>
-      <a href="rama_ka/produits.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">Produits</a>
-    </li>
+              <li>
+                <a
+                  href="soulayemane/blog.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >Deails du blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="relative group">
+            <!-- Bouton -->
+            <button class="font-medium hover:text-orange2">Pages</button>
 
-    <li>
-      <a href="rama_ka/panier.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">Panier</a>
-    </li>
+            <!-- Menu -->
+            <ul
+              class="absolute top-full left-0 pt-4 w-48 bg-white shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300"
+            >
+              <li>
+                <a
+                  href="fatoumata/connxion.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >Connexion</a
+                >
+              </li>
 
-  </ul>
-</div>
- <div class="relative group">
+              <li>
+                <a
+                  href="inscription.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >Inscription</a
+                >
+              </li>
 
-  <!-- Bouton -->
-  <button class="font-medium hover:text-orange2">
-    Blog
-  </button>
+              <li>
+                <a
+                  href="fatoumata/suivi_commande.html"
+                  class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2"
+                  >suivi mon commande</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="lena_diediou/contact.html" class="hover:text-orange2"
+              >contact</a
+            >
+          </div>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button>🛍️</button>
+          <button>🔍</button>
+        </div>
+      </div>
+    </header>
 
-  <!-- Menu -->
-  <ul
-    class="absolute top-full left-0 pt-4 w-48 bg-white shadow-lg
-           opacity-0 pointer-events-none
-           group-hover:opacity-100 group-hover:pointer-events-auto
-           transition duration-300">
+    <!-- ================= HERO ================= -->
+    <section class="bg-fond_header bg-no-repeat bg-cover h-screen">
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 items-center px-6 py-16 content-center pt-[10%] m-6"
+      >
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Nike New <br />
+            Collection!
+          </h1>
+          <p class="text-gray-600 mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a
+            href="#"
+            class="w-14 h-14 flex items-center justify-center bg-orange rounded-full bg-orange-500 text-white hover:bg-orange transition"
+          >
+            +
+          </a>
+        </div>
 
-    <li>
-      <a href="soulayemane/blog.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">Blog</a>
-    </li>
+        <img src="banner/banner-img.png" alt="banner" class="w-[90%] pr-8" />
+      </div>
+    </section>
 
-    <li>
-      <a href="soulayemane/blog.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">Deails du blog</a>
-    </li>
+    <!-- ================= section propos ================= -->
+    <section class="w-full lg:w-[70%] lg:ms-[15%] xl:w-[70%] xl:ms-[15%]">
+      <div
+        class="m-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 place-items-center shadow-md md:border-none sm:border-none"
+      >
+        <div class="flex flex-wrap flex-full h-[20vh] justify-center">
+          <div class="text-center">
+            <i class="fa-regular fa-truck"></i>
+            <h1>Livraison gratuite</h1>
+            <p>Livraison gratuite sur toutes les commandes</p>
+          </div>
+        </div>
 
-  </ul>
-</div>
- <div class="relative group">
+        <div
+          class="flex flex-wrap w-full h-[20vh] justify-center lg:border-s-2 xl:border-s-2"
+        >
+          <div class="text-center">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+            <h1>Politique de retour</h1>
+            <p>Livraison gratuite sur toutes les commandes</p>
+          </div>
+        </div>
 
-  <!-- Bouton -->
-  <button class="font-medium hover:text-orange2">
-    Pages
-  </button>
+        <div
+          class="flex flex-wrap w-full h-[20vh] justify-center lg:border-s-2 xl:border-s-2"
+        >
+          <div class="text-center">
+            <i class="fa-solid fa-headset"></i>
+            <h1>Assistance 24h/24 et 7j/7</h1>
+            <p>Livraison gratuite sur toutes les commandes</p>
+          </div>
+        </div>
 
-  <!-- Menu -->
-  <ul
-    class="absolute top-full left-0 pt-4 w-48 bg-white shadow-lg
-           opacity-0 pointer-events-none
-           group-hover:opacity-100 group-hover:pointer-events-auto
-           transition duration-300">
+        <div
+          class="flex flex-wrap w-full h-[20vh] justify-center lg:border-s-2 xl:border-s-2"
+        >
+          <div class="text-center">
+            <i class="fa-solid fa-database"></i>
+            <h1>Paiement sécurisé</h1>
+            <p>Livraison gratuite sur toutes les commandes</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <li>
-      <a href="fatoumata/connxion.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">Connexion</a>
-    </li>
+    <!-- ================= section de quelques produits ================= -->
+    <section class="w-full lg:w-[70%] lg:ms-[15%] xl:w-[70%] xl:ms-[15%]">
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <img src="img/category/c1.jpg" class="w-full h-full rounded-lg" />
+        </div>
 
-    <li>
-      <a href="inscription.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">Inscription</a>
-    </li>
+        <div>
+          <img src="img/category/c2.jpg" class="w-full h-full rounded-lg" />
+        </div>
 
-    <li>
-      <a href="fatoumata/suivi_commande.html" class="block px-5 py-3 hover:bg-orange-500 hover:text-orange2">suivi mon commande</a>
-    </li>
+        <div class="row-span-2">
+          <img src="img/category/c5.jpg" class="w-full h-full rounded-lg" />
+        </div>
 
-  </ul>
-</div>
-<div>
-    <a href="lena_diediou/contact.html" class="hover:text-orange2">contact</a>
-</div>
+        <div>
+          <img src="img/category/c3.jpg" class="w-full h-full rounded-lg" />
+        </div>
 
+        <div>
+          <img src="img/category/c4.jpg" class="w-full h-full rounded-lg" />
+        </div>
+      </div>
+    </section>
 
-</nav>
-    <div class="flex items-center gap-4">
-      <button>🛍️</button>
-      <button>🔍</button>
-    </div>
+    <!-- ================= dernier produits ================= -->
+   <section class="m-12">
+  <!-- Titre -->
+  <div class="text-center font-bold text-2xl mb-6">
+    <h1>Derniers produits</h1>
   </div>
-</header>
 
-<!-- ================= HERO ================= -->
-<section class="bg-fond_header bg-no-repeat bg-cover h-screen">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 items-center px-6 py-16 content-center pt-[10%] m-6 ">
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        Nike New <br> Collection!
-      </h1>
-      <p class="text-gray-600 mb-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      </p>
-      <a href="#" class="w-14 h-14 flex items-center justify-center bg-orange rounded-full bg-orange-500 text-white hover:bg-orange transition">
-        + 
-     </a>
-     
-
+  <!-- Grille des produits -->
+  <div class="flex flex-wrap justify-center gap-4">
+    
+    <!-- Produit 1 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p1.jpg" alt="Produit 1">
     </div>
 
-    <img src="banner/banner-img.png" alt="banner" class="w-[90%] pr-8">
+    <!-- Produit 2 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p2.jpg" alt="Produit 2">
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p3.jpg" alt="Produit 3">
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p4.jpg" alt="Produit 4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic!</p>
+      <p>prix</p>
+      <div class="flex">
+        <i class="fa-solid fa-cart-shopping"></i>
+        
+      </div>
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p5.jpg" alt="Produit 5">
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p5.jpg" alt="Produit 5">
+    </div>
+    <!-- Produit 5 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p5.jpg" alt="Produit 5">
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+      <img class="w-full h-auto object-cover rounded-lg" src="img/product/p5.jpg" alt="Produit 5">
+    </div>
+
   </div>
 </section>
 
 
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-noire text-gray-300">
+      <!-- Conteneur + grille -->
+      <div
+        class="m-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center h-screen md:h-[60vh] lg:h-[60vh] xl:h-[60vh]"
+      >
+        <!-- ===== A propos de nous ===== -->
+        <div>
+          <h6 class="text-white font-semibold mb-4">À propos de nous</h6>
+          <p class="text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore dolore magna aliqua.
+          </p>
+        </div>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-noire text-gray-300 ">
+        <!-- ===== Newsletter ===== -->
+        <div>
+          <h6 class="text-white font-semibold mb-4">Newsletter</h6>
 
-  <!-- Conteneur + grille -->
-  <div class="m-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center h-screen md:h-[60vh] lg:h-[60vh] xl:h-[60vh]  ">
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="Enter Email"
+              class="w-full px-4 py-2 rounded-l text-gray-800 focus:outline-none"
+            />
+            <button
+              class="bg-orange2 px-4 py-2 rounded-r text-white hover:bg-orange2 transition"
+            >
+              →
+            </button>
+          </form>
+        </div>
 
-    <!-- ===== A propos de nous ===== -->
-    <div>
-      <h6 class="text-white font-semibold mb-4">
-       À propos de nous
-      </h6>
-      <p class="text-sm leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
-      </p>
-    </div>
+        <!-- ===== Instagram ===== -->
+        <div>
+          <h6 class="text-white font-semibold mb-4">Instagram Feed</h6>
 
-    <!-- ===== Newsletter ===== -->
-    <div>
-      <h6 class="text-white font-semibold mb-4">
-        Newsletter
-      </h6>
+          <div class="grid grid-cols-4 gap-2">
+            <img src="images/chassure1.png" class="rounded" />
+            <img src="images/cha2.webp" class="rounded" />
+            <img src="images/cha3.jpeg" class="rounded" />
+            <img src="images/hab4.webp" class="rounded" />
+            <img src="images/hab2.webp" class="rounded" />
+            <img src="images/hab4.webp" class="rounded" />
+            <img src="images/hab2.avif" class="rounded" />
+            <img src="images/hab2.webp" class="rounded" />
+          </div>
+        </div>
 
-      <form class="flex">
-        <input type="email" placeholder="Enter Email"class="w-full px-4 py-2 rounded-l text-gray-800 focus:outline-none" >
-        <button class="bg-orange2 px-4 py-2 rounded-r text-white hover:bg-orange2 transition">→ </button>
-      </form>
-    </div>
-
-    <!-- ===== Instagram ===== -->
-    <div>
-      <h6 class="text-white font-semibold mb-4">
-        Instagram Feed
-      </h6>
-
-      <div class="grid grid-cols-4 gap-2">
-        <img src="images/chassure1.png" class="rounded">
-        <img src="images/cha2.webp" class="rounded">
-        <img src="images/cha3.jpeg" class="rounded">
-        <img src="images/hab4.webp" class="rounded">
-        <img src="images/hab2.webp" class="rounded">
-        <img src="images/hab4.webp" class="rounded">
-        <img src="images/hab2.avif" class="rounded">
-        <img src="images/hab2.webp" class="rounded">
+        <!-- ===== Social ===== -->
+        <div>
+          <h6 class="text-white font-semibold mb-4">Suivez-nous</h6>
+          <div class="flex gap-4 text-xl">
+            <a href="#" class="hover:text-orange transition">🌐</a>
+            <a href="#" class="hover:text-orange transition">🐦</a>
+            <a href="#" class="hover:text-orange transition">📸</a>
+            <a href="#" class="hover:text-orange transition">🎨</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- ===== Social ===== -->
-    <div>
-      <h6 class="text-white font-semibold mb-4">
-       Suivez-nous
-      </h6>
-      <div class="flex gap-4 text-xl">
-        <a href="#" class="hover:text-orange transition">🌐</a>
-        <a href="#" class="hover:text-orange transition">🐦</a>
-        <a href="#" class="hover:text-orange transition">📸</a>
-        <a href="#" class="hover:text-orange transition">🎨</a>
+      <div class="border-t border-gray-700 py-4">
+        <p class="text-center text-sm text-gray-400">
+          © 2026 All rights reserved | Made with ❤️ by Colorlib
+        </p>
       </div>
-    </div>
-  </div>
-   <div class="border-t border-gray-700 py-4">
-    <p class="text-center text-sm text-gray-400">
-      © 2026 All rights reserved | Made with ❤️ by Colorlib
-    </p>
-  </div>
 
-  <!-- Bas du footer -->
-  
+      <!-- Bas du footer -->
+    </footer>
 
-</footer>
-
-
-
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
